@@ -18,6 +18,8 @@ class ApplicationController < Sinatra::Base
 
   get '/articles' do
     @articles = Article.all
+
+    erb :new
   end
 
   post '/article' do
