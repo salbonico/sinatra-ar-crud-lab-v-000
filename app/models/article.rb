@@ -5,6 +5,10 @@ class Article < ActiveRecord::Base
 
 attr_accessor :title, :content
 
+def initiate(input)
+  @title = input[:title]
+  @content = input[:content]
+
 def self.all
 @@all
 end
