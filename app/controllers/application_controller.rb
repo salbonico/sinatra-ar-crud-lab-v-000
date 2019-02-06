@@ -24,10 +24,11 @@ class ApplicationController < Sinatra::Base
 
   post '/articles' do
 
-    binding.pry
+
     article = Article.new
     article.title = params[:title]
-    article.content = params[:content] 
+    article.content = params[:content]
+    binding.pry 
   end
 
 end
