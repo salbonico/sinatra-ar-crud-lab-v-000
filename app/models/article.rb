@@ -8,6 +8,7 @@ attr_accessor :title, :content
 def initiate(input)
   @title = input[:title]
   @content = input[:content]
+end
 
 def self.all
 @@all
