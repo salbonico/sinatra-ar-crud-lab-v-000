@@ -12,20 +12,20 @@ def initiate(input)
   @@all << self
 end
 
-def self.all
-@@all
-end
+#def self.all
+#@@all
+#end
 
-def save
+#def save
 
-      sql = <<-SQL
-        INSERT INTO articles (title, content)
-        VALUES (?, ?)
-      SQL
+#      sql = <<-SQL
+#        INSERT INTO articles (title, content)
+#        VALUES (?, ?)
+#      SQL
 
-      ActiveRecord::Base[:database].execute(sql, self.title, self.content)
+#      ActiveRecord::Base[:database].execute(sql, self.title, self.content)
 
 
-end
+#end
 
 end
