@@ -7,8 +7,8 @@ attr_accessor :title, :content
 attr_reader :id
 
 def initiate(input)
-  @title = input["title"]
-  @content = input["content"]
+  @title = input[:title]
+  @content = input[:content]
 
 end
 
