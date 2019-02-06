@@ -23,8 +23,8 @@ def save
         VALUES (?, ?)
       SQL
 
-      DB[:conn].execute(sql, self.title, self.content)
-      
+      DB[:database].execute(sql, self.title, self.content)
+
 
 end
 
