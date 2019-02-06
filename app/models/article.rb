@@ -6,11 +6,11 @@ class Article < ActiveRecord::Base
 attr_accessor :title, :content
 attr_reader :id
 
-def initiate(input)
-  @title = input[:title]
-  @content = input[:content]
-  @@all << self
-end
+# def initiate(input)
+#   @title = input[:title]
+#   @content = input[:content]
+#   @@all << self
+# end
 
 #def self.all
 #@@all
