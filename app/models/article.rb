@@ -1,7 +1,7 @@
 #Placeholder for a model
 
 class Article < ActiveRecord::Base
-# @@all = []
+
 
 attr_accessor :title, :content
 attr_reader :id
@@ -9,7 +9,7 @@ attr_reader :id
 def initiate(input)
   @title = input[:title]
   @content = input[:content]
-  @@all << self
+
 end
 
 #def self.all
