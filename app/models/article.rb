@@ -23,7 +23,7 @@ def save
         VALUES (?, ?)
       SQL
 
-      DB[:database].execute(sql, self.title, self.content)
+      ActiveRecord::Base[:database].execute(sql, self.title, self.content)
 
 
 end
