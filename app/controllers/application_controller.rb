@@ -26,6 +26,8 @@ class ApplicationController < Sinatra::Base
 
     binding.pry
     article = Article.new
+    article.title = params[:title]
+    article.content = params[:content] 
   end
 
 end
