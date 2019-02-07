@@ -26,10 +26,10 @@ class ApplicationController < Sinatra::Base
 
 
     article = Article.new
-    article[:title] = params[:title]
-    article[:content] = params[:content]
+    article.title = params[:title]
+    article.content = params[:content]
     article.save
-     
+
   end
 
 end
