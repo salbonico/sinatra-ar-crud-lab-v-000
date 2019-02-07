@@ -30,7 +30,7 @@ class ApplicationController < Sinatra::Base
     article.title = params[:title]
     article.content = params[:content]
     article.save
-    binding.pry 
+
 
   end
 
