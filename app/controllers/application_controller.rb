@@ -35,8 +35,5 @@ class ApplicationController < Sinatra::Base
   end
 
 
-  get '/articles/:id' do
-  Article.find(params(:id))
-  end
 
 end
