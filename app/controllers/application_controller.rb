@@ -44,8 +44,9 @@ erb :show
 end
 
 patch '/articles/:id' do
-  article = Article.find(params[:id])
   binding.pry
+  article = Article.find(params[:id])
+
   article.title = params[:title]
   article.content = params[:content]
   article.save
