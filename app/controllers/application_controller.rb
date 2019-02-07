@@ -16,6 +16,11 @@ class ApplicationController < Sinatra::Base
     erb :new
   end
 
+  get '/articles/:id' do
+  Article.find(params(:id))
+  end
+
+
   get '/articles' do
     @articles = Article.all
 
@@ -27,6 +32,7 @@ class ApplicationController < Sinatra::Base
     article.title = params[:title]
     article.content = params[:content]
     article.save
+
     
   end
 
