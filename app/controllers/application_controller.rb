@@ -31,7 +31,7 @@ class ApplicationController < Sinatra::Base
     article.content = params[:content]
     article.save
 
-    erb :articles/3
+    erb :articles
   end
 
 
