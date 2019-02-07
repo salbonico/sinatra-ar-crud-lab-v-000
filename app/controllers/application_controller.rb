@@ -33,7 +33,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get 'articles/:id/edit' do
-    
+    @article = Article.find(1)
 
     erb :edit
   end
