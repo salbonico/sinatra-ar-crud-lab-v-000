@@ -39,7 +39,7 @@ get '/articles/:id' do
 erb :show
 end
 
-get 'articles/:id/edit' do
+patch 'articles/:id/edit' do
   @article = Article.find(params[:id])
 
 end
