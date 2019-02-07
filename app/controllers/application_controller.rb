@@ -35,8 +35,8 @@ class ApplicationController < Sinatra::Base
   end
 
 get '/articles/:id' do
-article = Article.find(params[:id]) 
-
+article = Article.find(params[:id])
+binding.pry
 end
 
 
