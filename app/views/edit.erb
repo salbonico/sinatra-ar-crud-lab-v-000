@@ -8,8 +8,3 @@
 <input id="content" type="text" name="content">
 <button id="submit" type="submit">Submit</button>
 </form>
-
-<form action='/articles/<%= @article.id %>/delete' method="POST">
-<input id="hidden" type="hidden" name="_method" value="DELETE">
-<button id="submit" type="submit" value="delete">Delete</button>
-</form>
