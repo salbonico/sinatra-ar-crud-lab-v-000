@@ -52,6 +52,9 @@ get '/articles/:id' do
 erb :show
 end
 
-
+delete '/articles/:id/delete' do
+  article = Article.find(params[:id])
+  article.destroy
+end
 
 end
