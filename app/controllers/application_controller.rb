@@ -33,7 +33,7 @@ class ApplicationController < Sinatra::Base
     article.content = params[:content]
     article.save
 
-    
+
   end
 
 end
