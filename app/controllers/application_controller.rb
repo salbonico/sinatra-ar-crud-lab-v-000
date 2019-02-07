@@ -9,14 +9,13 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
+    @articles = Artist.all
     erb :index
   end
 
   get '/articles/new' do
     erb :new
   end
-
-
 
 
   get '/articles' do
