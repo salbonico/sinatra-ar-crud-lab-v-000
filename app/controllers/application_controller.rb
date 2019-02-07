@@ -31,7 +31,7 @@ class ApplicationController < Sinatra::Base
     article.content = params[:content]
     article.save
 
-    redirect '/articles/poo'
+    redirect '/articles/#{article.id}'
   end
 
 
