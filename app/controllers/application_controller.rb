@@ -28,7 +28,7 @@ class ApplicationController < Sinatra::Base
     article.content = params[:content]
     article.save
 
-    erb "/articles/poo"
+    
   end
 
 end
